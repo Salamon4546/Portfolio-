@@ -3,6 +3,9 @@
     color: #f0f0f0;
     font-family: Arial, sans-serif;
     margin: 0;
+    --accent: #8498d5;
+    --accent-dark: #35466f;
+    --glow: rgba(70, 95, 165, 0.16);
 }
 
 .movies-header {
@@ -59,6 +62,8 @@
     border: 1px solid #292c33;
     border-radius: 12px;
     padding: 30px;
+    box-shadow: 0 0 35px var(--glow);
+
 }
 
 .movie-viewer {
@@ -79,6 +84,7 @@
     font-size: 12px;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    color: var(--accent);
 }
 
 .poster-placeholder {
@@ -92,6 +98,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-color: var(--accent-dark);
 }
 
 .poster-placeholder span {
@@ -152,3 +159,16 @@
     font-size: 11px;
     letter-spacing: 2px;
 }
+
+.theme-thriller {
+    --accent: #8498d5;
+    --accent-dark: #35466f;
+    --glow: rgba(70, 95, 165, 0.16);
+}
+
+.genre-button.active {
+    background-color: var(--accent-dark);
+    color: #ffffff;
+    border-color: var(--accent);
+}
+
