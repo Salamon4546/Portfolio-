@@ -99,6 +99,7 @@
     justify-content: center;
     align-items: center;
     border-color: var(--accent-dark);
+    overflow: hidden;
 }
 
 .poster-placeholder span {
@@ -145,9 +146,10 @@
 
 .genre-button:hover,
 .movie-arrow:hover {
-    background-color: #292e3a;
+    background-color: var(--accent-dark);
     color: #ffffff;
-    border-color: #8498d5;
+    border-color: var(--accent);
+    transform: scale(1.08);
 }
 
 .movies-footer {
@@ -170,5 +172,65 @@
     background-color: var(--accent-dark);
     color: #ffffff;
     border-color: var(--accent);
+    box-shadow: 0 0 12px var(--glow);
 }
 
+.movie-poster-image {
+    display: block;
+    width: 260px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.genre-button {
+    background-color: #1b1d22;
+    color: #b8b8b8;
+    border: 1px solid #33363d;
+    padding: 10px 17px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.theme-thriller {
+    --accent: #7f9bd8;
+    --accent-dark: #34466f;
+    --glow: rgba(70, 95, 165, 0.16);
+}
+
+.theme-crime {
+    --accent: #d15c63;
+    --accent-dark: #702d36;
+    --glow: rgba(150, 35, 45, 0.18);
+}
+
+.theme-mystery {
+    --accent: #a98be3;
+    --accent-dark: #59417d;
+    --glow: rgba(115, 70, 175, 0.2);
+}
+
+.theme-drama {
+    --accent: #d2aa7d;
+    --accent-dark: #795b3d;
+    --glow: rgba(160, 110, 60, 0.16);
+}
+
+.theme-comic {
+    --accent: #58c5ee;
+    --accent-dark: #17668c;
+    --glow: rgba(30, 130, 190, 0.2);
+}
+
+.theme-fantasy {
+    --accent: #acd17d;
+    --accent-dark: #42623a;
+    --glow: rgba(80, 130, 55, 0.2);
+}
+
+.theme-horror {
+    --accent: #4e2025;
+    --accent-dark: #3a0812;
+    --glow: rgba(105, 13, 27, 0.24);
+}
